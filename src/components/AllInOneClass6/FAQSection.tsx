@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { FaPlus, FaMinus, FaShieldAlt, FaMedal, FaStar } from 'react-icons/fa';
 import { BsBook, BsCalculator, BsGlobe, BsLightbulb, BsJournalCheck, BsCrosshair } from 'react-icons/bs';
 import { motion } from 'framer-motion';
@@ -37,10 +37,10 @@ const faqData = [
 ];
 
 const FAQSection = () => {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const toggleAccordion = (index) => {
-    setOpenIndex(openIndex === index ? -1 : index);
+  const toggleAccordion = (index: number) => {
+    setOpenIndex(openIndex === index ? null : index);
   };
 
   return (

@@ -1,6 +1,5 @@
 import Header from "../components/AllInOneClass6/Header";
 import Hero from "../components/AllInOneClass6/Hero";
-import LearningHighlights from "../components/AllInOneClass6/LearningHighlights";
 import BookShowcase from "../components/AllInOneClass6/BookShowcase";
 import FAQSection from "../components/AllInOneClass6/FAQSection";
 import Testimonials from "../components/AllInOneClass6/Testimonials";

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 export default function LearningHighlights() {
   const features = [
@@ -25,7 +25,7 @@ export default function LearningHighlights() {
       description:
         "Timed practice sets simulate real exam pressure, improving speed, accuracy, and confidence.",
       icon: "⏱️",
-    },
+      },
   ];
 
   const containerVariants = {
@@ -37,7 +37,7 @@ export default function LearningHighlights() {
     },
   };
 
-  const cardVariants = {
+  const cardVariants: Variants = {
     hidden: { opacity: 0, y: 40 },
     show: {
       opacity: 1,

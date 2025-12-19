@@ -10,8 +10,8 @@ const Header = () => {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
-  const handleClickOutside = useCallback((event) => {
-    if (dropdownOpen && !event.target.closest(".dropdown-container")) {
+  const handleClickOutside = useCallback((event: MouseEvent) => {
+    if (dropdownOpen && !(event.target as Element).closest(".dropdown-container")) {
       setDropdownOpen("");
     }
   }, [dropdownOpen]);
@@ -34,7 +34,7 @@ const Header = () => {
     { name: "Contact" }
   ];
 
-  const Dropdown = ({ items, name }) => (
+  const Dropdown = ({ items, name }: { items: string[], name: string }) => (
     <div className="dropdown-container relative">
       <button
         className="flex items-center space-x-1 px-4 py-2 rounded-full hover:bg-green-50 text-green-900 font-medium transition-all duration-300"
