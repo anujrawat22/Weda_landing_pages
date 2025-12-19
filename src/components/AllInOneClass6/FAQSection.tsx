@@ -44,7 +44,7 @@ const FAQSection = () => {
   };
 
   return (
-    <section className="py-20 bg-green-50/30 overflow-hidden relative">
+    <section className="py-16 md:py-20 bg-green-50/30 overflow-hidden relative">
       {/* Background Decoration */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
          <div className="absolute top-[-10%] left-[-5%] w-96 h-96 bg-green-100 rounded-full blur-3xl opacity-50"></div>
@@ -85,11 +85,11 @@ const FAQSection = () => {
       </div>
 
       <div className="max-w-7xl  mx-auto relative z-10">
-        <div className="flex flex-col lg:flex-row items-start gap-16">
+        <div className="flex flex-col lg:flex-row items-start gap-16 lg:gap-16">
           
           {/* Left Visual Side */}
-          <div className="w-full lg:w-1/2 relative flex justify-center sticky top-24">
-             <div className="relative w-3/4 md:w-2/3 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
+          <div className="w-full lg:w-1/2 relative flex justify-center lg:sticky lg:top-24">
+             <div className="relative w-full max-w-[200px] md:max-w-none md:w-2/3 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
                 <img 
                   src="/book5.jpeg" 
                   alt="Student studying with WEDA books" 
@@ -101,15 +101,15 @@ const FAQSection = () => {
              </div>
              
              {/* Decorative Elements behind image */}
-             <div className="absolute -z-10 top-10 left-10 w-3/4 md:w-2/3 h-full border-2 border-green-200 rounded-[3rem]"></div>
+             <div className="absolute -z-10 top-10 left-10 w-full max-w-[280px] md:max-w-none md:w-2/3 h-full border-2 border-green-200 rounded-[3rem]"></div>
              <div className="absolute -z-10 -bottom-10 -right-10 w-40 h-40 bg-green-100 rounded-full blur-xl"></div>
           </div>
 
           {/* Right Content Side (Accordion) */}
           <div className="w-full lg:w-1/2">
-            <div className="mb-10">
+            <div className="mb-10 px-5">
                <span className="text-green-700 font-bold tracking-wider uppercase text-sm mb-2 block">Common Questions</span>
-               <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 leading-tight">
+               <h2 className="text-2xl md:text-5xl font-serif font-bold text-gray-900 leading-tight">
                  Detailed Insights into <br/>
                  <span className="text-green-700">WEDA Book Series</span>
                </h2>
@@ -123,13 +123,13 @@ const FAQSection = () => {
                 >
                   <button
                     onClick={() => toggleAccordion(index)}
-                    className="w-full flex items-center justify-between p-5 md:p-6 text-left focus:outline-none"
+                    className="w-full flex items-center justify-between p-4 md:p-6 text-left focus:outline-none"
                   >
                     <div className="flex items-center gap-4">
                       <div className={`p-3 rounded-xl transition-colors duration-300 ${openIndex === index ? 'bg-green-900 text-white' : 'bg-green-50 text-green-700'}`}>
                         {item.icon}
                       </div>
-                      <span className={`font-bold text-lg md:text-xl ${openIndex === index ? 'text-gray-900' : 'text-gray-700'}`}>
+                      <span className={`font-bold text-base md:text-xl ${openIndex === index ? 'text-gray-900' : 'text-gray-700'}`}>
                         {item.question}
                       </span>
                     </div>
@@ -141,7 +141,7 @@ const FAQSection = () => {
                   <div 
                     className={`transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}
                   >
-                    <div className="px-6 pb-6 pl-[5.5rem] text-gray-600 leading-relaxed">
+                    <div className="px-6 pb-6 pl-4 md:pl-[5.5rem] text-gray-600 leading-relaxed text-sm md:text-base">
                       {item.answer}
                     </div>
                   </div>
