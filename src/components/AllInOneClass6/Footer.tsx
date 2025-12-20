@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import Logo from '../../assets/Weda_logo_cropped.png'; // Adjust path if needed
 
 const Footer = () => {
@@ -6,24 +6,21 @@ const Footer = () => {
     <footer className="bg-green-950 text-white pt-12 md:pt-20 pb-8 md:pb-10">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 mb-10 md:mb-16">
-          
+
           {/* Column 1: About */}
           <div className="space-y-6">
             <div className="flex items-center space-x-2">
-               {/* Use a white version of logo if available, or filter brightness */}
-               <img src={Logo} alt="WEDA Logo" className="h-12 w-auto brightness-0 invert" />
+              {/* Use a white version of logo if available, or filter brightness */}
+              <img src={Logo} alt="WEDA Logo" className="h-12 w-auto brightness-0 invert" />
             </div>
             <p className="text-gray-400 leading-relaxed">
               Empowering future leaders with the best preparation material for Sainik School & RMS entrance exams. Discipline, Dedication, and Success.
             </p>
             <div className="flex gap-4 pt-2">
-              <a href="#" className="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61581056314766" className="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700 transition-colors">
                 <FaFacebookF />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700 transition-colors">
-                <FaTwitter />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700 transition-colors">
+              <a href="https://www.instagram.com/weda_books_/" className="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700 transition-colors">
                 <FaInstagram />
               </a>
             </div>
@@ -45,19 +42,42 @@ const Footer = () => {
           <div>
             <h3 className="text-lg md:text-xl font-serif font-bold mb-4 md:mb-6">Contact Us</h3>
             <ul className="space-y-4">
+              {/* Location */}
               <li className="flex items-start gap-3 text-gray-400 text-sm md:text-base">
                 <FaMapMarkerAlt className="mt-1 text-green-500 shrink-0" />
-                <span>123 Defence Colony, New Delhi, India - 110024</span>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=123+Defence+Colony+New+Delhi+India+110024"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-green-400 transition"
+                >
+                  123 Defence Colony, New Delhi, India - 110024
+                </a>
               </li>
+
+              {/* Phone */}
               <li className="flex items-center gap-3 text-gray-400 text-sm md:text-base">
                 <FaPhoneAlt className="text-green-500 shrink-0" />
-                <span>+91 98765 43210</span>
+                <a
+                  href="tel:+919876543210"
+                  className="hover:text-green-400 transition"
+                >
+                  +91 98765 43210
+                </a>
               </li>
+
+              {/* Email */}
               <li className="flex items-center gap-3 text-gray-400 text-sm md:text-base">
                 <FaEnvelope className="text-green-500 shrink-0" />
-                <span>support@weda.in</span>
+                <a
+                  href="mailto:support@weda.in"
+                  className="hover:text-green-400 transition"
+                >
+                  support@weda.in
+                </a>
               </li>
             </ul>
+
           </div>
 
         </div>
