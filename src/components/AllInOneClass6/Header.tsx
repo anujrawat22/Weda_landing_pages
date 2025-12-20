@@ -1,7 +1,5 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState  } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
-import { FaChevronDown } from "react-icons/fa";
-import { BiUser } from "react-icons/bi";
 import Logo from '../../assets/Weda_logo_cropped.png'
 
 const Header = () => {

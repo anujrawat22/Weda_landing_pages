@@ -2,6 +2,10 @@ import { FaCheckCircle, FaExclamationCircle } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
+
+  const handleButtonClick = () => {
+    window.location.href = 'https://wedabooks.com/cart-2?productId=5621'
+  }
   return (
     <section className="relative bg-white overflow-hidden min-h-[90vh] flex items-center">
       {/* Background Shapes (Abstract Blobs) */}
@@ -52,7 +56,7 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 pt-2 items-center">
-            <button className="w-fit px-6 md:px-8 py-3 md:py-4 bg-green-900 hover:bg-green-800 text-white text-base md:text-lg font-medium rounded-full shadow-xl shadow-green-900/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105">
+            <button className="w-fit px-6 md:px-8 py-3 md:py-4 bg-green-900 hover:bg-green-800 text-white text-base md:text-lg font-medium rounded-full shadow-xl shadow-green-900/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105" onClick={handleButtonClick}>
               Get Complete Set Now
             </button>
           </div>
