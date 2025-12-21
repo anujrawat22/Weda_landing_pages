@@ -1,5 +1,7 @@
 import Header from "../components/AllInOneClass6/Header";
 import Hero from "../components/AllInOneClass6/Hero";
+import About from "../components/AllInOneClass6/About";
+import InstituteOverview from "../components/AllInOneClass6/InstituteOverview";
 import BookShowcase from "../components/AllInOneClass6/BookShowcase";
 import FAQSection from "../components/AllInOneClass6/FAQSection";
 import Testimonials from "../components/AllInOneClass6/Testimonials";
@@ -13,6 +15,12 @@ const AllInOneClass6 = () => {
       <main>
         <section id="home">
           <Hero />
+        </section>
+        <section id="about">
+          <About />
+        </section>
+        <section id="institute">
+          <InstituteOverview />
         </section>
         <section id="books">
           <BookShowcase />
