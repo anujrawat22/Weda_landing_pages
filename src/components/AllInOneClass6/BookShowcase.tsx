@@ -12,7 +12,7 @@ const books = [
     title: "Comprehensive English Guide",
     subtitle: "Grammar, Vocabulary & Comprehension",
     description: "Master the English language with our comprehensive guide designed for Sainik School aspirants. Includes detailed grammar rules, extensive vocabulary lists, and practice comprehension passages to boost your confidence.",
-    image: "/book3.jpeg",
+    image: "/eng.png",
     color: "bg-green-100",
     accent: "text-green-600"
   },
@@ -21,7 +21,7 @@ const books = [
     title: "Mathematics Mastery",
     subtitle: "Concepts, Tricks & Practice",
     description: "Conquer numbers with our Mathematics Mastery book. Featuring step-by-step concept explanations, shortcut tricks for quick calculations, and hundreds of practice questions ranging from basic to advanced levels.",
-    image: "/book5.jpeg",
+    image: "/maths.png",
     color: "bg-amber-100",
     accent: "text-amber-600"
   },
@@ -30,7 +30,7 @@ const books = [
     title: "General Intelligence & Logic",
     subtitle: "Verbal & Non-Verbal Reasoning",
     description: "Sharpen your logical thinking with our General Intelligence book. Covers verbal and non-verbal reasoning topics extensively, helping you solve complex puzzles and patterns with ease.",
-    image: "/book2.jpeg",
+    image: "/GI.png",
     color: "bg-blue-100",
     accent: "text-blue-600"
   },
@@ -39,19 +39,10 @@ const books = [
     title: "General Science Encyclopedia",
     subtitle: "Physics, Chemistry & Biology",
     description: "Explore the world of science with our General Science Encyclopedia. Simplified explanations of complex scientific concepts, accompanied by diagrams and real-world examples to make learning fun and effective.",
-    image: "/book4.jpeg",
+    image: "/gs.png",
     color: "bg-red-100",
     accent: "text-red-600"
   },
-  // {
-  //   id: 5,
-  //   title: "All-in-One Practice Set",
-  //   subtitle: "Previous Papers & Mock Tests",
-  //   description: "The ultimate practice companion. Contains previous years' question papers and carefully curated mock tests to simulate the actual exam environment and assess your preparation level.",
-  //   image: "/book5.jpeg",
-  //   color: "bg-purple-100",
-  //   accent: "text-purple-600"
-  // }
 ];
 
 const BookShowcase = () => {

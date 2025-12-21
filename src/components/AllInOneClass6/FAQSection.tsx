@@ -91,7 +91,7 @@ const FAQSection = () => {
           <div className="w-full lg:w-1/2 relative flex justify-center lg:sticky lg:top-24">
              <div className="relative w-full max-w-[200px] md:max-w-none md:w-2/3 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
                 <img 
-                  src="/book5.jpeg" 
+                  src="/eng.png" 
                   alt="Student studying with WEDA books" 
                   className="w-full h-auto object-contain"
                 />
