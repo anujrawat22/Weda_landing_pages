@@ -16,14 +16,14 @@ const AllInOneClass6 = () => {
         <section id="home">
           <Hero />
         </section>
+        <section id="books">
+          <BookShowcase />
+        </section>
         <section id="about">
           <About />
         </section>
         <section id="institute">
           <InstituteOverview />
-        </section>
-        <section id="books">
-          <BookShowcase />
         </section>
         <section id="features">
           <LearningHighlights />

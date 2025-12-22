@@ -24,6 +24,10 @@ const Header = () => {
     { name: "Contact", id: "contact" }
   ];
 
+  const handleNavigate = () => {
+    window.open("https://wedabooks.com/", "_blank");
+  }
+
   return (
     <header className="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100">
       <nav className="max-w-7xl mx-auto px-6 py-4">
@@ -50,10 +54,10 @@ const Header = () => {
             ))}
             
             <button 
-              onClick={() => scrollToSection("books")}
+              onClick={() => handleNavigate()}
               className="ml-4 px-6 py-2 bg-green-900 text-white rounded-full font-medium hover:bg-green-800 transition-colors shadow-lg shadow-green-900/20"
             >
-              Buy Now
+              More Products
             </button>
           </div>
 
