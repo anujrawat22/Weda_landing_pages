@@ -52,8 +52,8 @@ const Header = () => {
                 {item.name}
               </button>
             ))}
-            
-            <button 
+
+            <button
               onClick={() => handleNavigate()}
               className="ml-4 px-6 py-2 bg-green-900 text-white rounded-full font-medium hover:bg-green-800 transition-colors shadow-lg shadow-green-900/20"
             >
@@ -85,11 +85,11 @@ const Header = () => {
                   {item.name}
                 </button>
               ))}
-              <button 
-                onClick={() => scrollToSection("books")}
+              <button
+                onClick={() => handleNavigate()}
                 className="mt-4 w-full px-6 py-3 bg-green-900 text-white rounded-xl font-medium hover:bg-green-800 transition-colors text-center shadow-lg"
               >
-                Buy Now
+                More Products
               </button>
             </div>
           </div>
