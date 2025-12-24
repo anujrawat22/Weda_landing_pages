@@ -122,7 +122,7 @@ const Hero = () => {
             {/* Main Book Image */}
             <div className="relative w-full h-full transform transition-transform duration-500 hover:scale-105">
               <img
-                src="/eng.png"
+                src="/HeroImage.png"
                 alt="WEDA All in One Book Set"
                 className="w-full h-full object-contain drop-shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500"
               />
