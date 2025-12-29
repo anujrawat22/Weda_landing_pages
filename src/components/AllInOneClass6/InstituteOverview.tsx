@@ -106,11 +106,11 @@ const InstituteOverview = () => {
           </motion.h2>
           
           <motion.p variants={itemVariants} className="text-lg text-gray-600 leading-relaxed mb-6">
-            The Winning Edge Defence Academy (WEDA) is a premier coaching institute dedicated to shaping young aspirants for Sainik School, RIMC, RMS, and NDA. Built on discipline, academic excellence, and personalised mentoring, WEDA offers structured courses, expert educators, result oriented teaching methods, mock tests, and a supportive learning environment.
+            The Winning Edge Defence Academy (WEDA) is a top coaching institute that is dedicated to the tough and comprehensive instruction of the young aspirants who will take the entrance examinations and written tests of Sainik School, RIMC, RMS, and NDA. Founded on discipline, academic excellence, and personalised mentoring, WEDA provides effectively structured programs, led by an experienced faculty, using resultoriented teaching methodologies, regular mock assessments, and a focussed, supportive learning environment.
           </motion.p>
 
           <motion.p variants={itemVariants} className="text-lg text-gray-600 leading-relaxed">
-             We focus not just on exam preparation, but on developing leadership, confidence, values, and a defence mindset. With hundreds of successful selections every year, WEDA has become the trusted choice for parents and students seeking quality guidance. Our mission is simple — to give every child the winning edge to succeed in Defence exams and in life.
+             WEDA does not only prepare the candidates for the examinations but also stresses on the students holistically development through the acquiring of leadership qualities, confidence, good morals, and the true defence spirit. WEDA, with its record of hundreds of selections every year, has become the most trusted institution among parents and students who are in search of reliable, highquality guidance. Our goal is absolutely one to give every child the advantage that he or she needs to be able to excel in defence examinations and to be successful in life.
           </motion.p>
         </motion.div>
 

@@ -11,7 +11,7 @@ const books = [
     id: 1,
     title: "Comprehensive English Guide",
     subtitle: "Grammar, Vocabulary & Comprehension",
-    description: "Master the English language with our comprehensive guide designed for Sainik School aspirants. Includes detailed grammar rules, extensive vocabulary lists, and practice comprehension passages to boost your confidence.",
+    description: "Prepare to have effective English language skills through this comprehensive guide which was specially created for soldiers' school candidates. Besides explaining grammar in detail, the book has a well, planned vocabulary section and carefully made comprehension exercises to train students in becoming fluent, precise, and confident in using the English language.",
     image: "/eng.png",
     color: "bg-green-100",
     accent: "text-green-600"
@@ -20,7 +20,7 @@ const books = [
     id: 2,
     title: "Mathematics Mastery",
     subtitle: "Concepts, Tricks & Practice",
-    description: "Conquer numbers with our Mathematics Mastery book. Featuring step-by-step concept explanations, shortcut tricks for quick calculations, and hundreds of practice questions ranging from basic to advanced levels.",
+    description: "Make your basics solid in math with our Mathematics Mastery book. It provides concept explanations that are clear and step, by, step, calculation techniques that are efficient, and a wide range of practice questions from elementary to advanced levels for complete grasp and test preparation.",
     image: "/maths.png",
     color: "bg-amber-100",
     accent: "text-amber-600"
@@ -57,7 +57,7 @@ const BookShowcase = () => {
           </h2>
           <div className="h-1 w-20 bg-green-600 mx-auto rounded-full"></div>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            Explore our meticulously crafted books designed to cover every aspect of the Sainik School & RMS entrance syllabus.
+            Discover our expertly crafted educational materials, arranged to facilitate complete and thorough coverage of the Sainik School and RMS entrance syllabus. 
           </p>
         </div>
 
