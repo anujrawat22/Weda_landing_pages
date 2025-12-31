@@ -32,17 +32,17 @@ const About = () => {
         <motion.div 
           animate={{ x: [0, 30, 0], y: [0, -30, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-[10%] left-[-5%] w-96 h-96 bg-green-50 rounded-full mix-blend-multiply filter blur-3xl opacity-70"
+          className="absolute top-[10%] left-[-5%] w-96 h-96 bg-green-50 rounded-full mix-blend-multiply filter blur-3xl opacity-40"
         />
         <motion.div 
           animate={{ x: [0, -30, 0], y: [0, 30, 0] }}
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          className="absolute top-[10%] right-[-5%] w-96 h-96 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"
+          className="absolute top-[10%] right-[-5%] w-96 h-96 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40"
         />
         <motion.div 
           animate={{ x: [0, 20, 0], y: [0, 20, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          className="absolute -bottom-32 left-[20%] w-96 h-96 bg-green-50 rounded-full mix-blend-multiply filter blur-3xl opacity-70"
+          className="absolute -bottom-32 left-[20%] w-96 h-96 bg-green-50 rounded-full mix-blend-multiply filter blur-3xl opacity-40"
         />
       </div>
 
@@ -78,9 +78,6 @@ const About = () => {
                   alt="Director of WEDA Education" 
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <p className="text-white font-medium">Dedicated to Excellence</p>
-                </div>
               </div>
               
               {/* Decorative Elements */}
@@ -91,7 +88,7 @@ const About = () => {
 
           {/* Right Content */}
           <motion.div 
-            className="w-full md:w-1/2 space-y-6"
+            className="w-full md:w-1/2 space-y-6 relative z-20"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -111,13 +108,13 @@ const About = () => {
 
             <div className="text-gray-600 leading-relaxed space-y-4">
               <motion.p variants={itemVariants}>
-                Col Amardeep Singh, SM (Retd), is an ex-NDA officer and a seasoned military professional who served the Indian Army for 25 years. He brings extensive operational, instructional, and leadership experience from Jammu & Kashmir, Manipur, and the UN Mission in Ethiopia & Eritrea.
+                Col Amardeep Singh, SM (Retd), is an ex, NDA officer of distinction, who has served the Indian Army for 25 years with merit. His career includes a wide range of operational, instructional, and leadership experience in difficult areas like Jammu & Kashmir, Manipur, and an overseas deployment with the United Nations Mission in Ethiopia and Eritrea.
               </motion.p>
               <motion.p variants={itemVariants}>
-                He has held prestigious instructional assignments at The Infantry School, the Indian Military Academy (IMA), and the Army War College. Founded in 2019, The Winning Edge Defence Academy (WEDA) has emerged as a leading institution for Defence Entrance Exam preparation under his guidance.
+                He has been promoted instructor at the most elite training institutions like The Infantry School, the Indian Military Academy (IMA), and the Army War College. Winning Edge Defence Academy (WEDA) has, under his guidance, become not only a profoundly effective but also a very popular institute for Defence Entrance Examination preparation in Chandigarh and North India, since 2019.
               </motion.p>
               <motion.p variants={itemVariants}>
-                His guiding motto, <span className="italic font-medium text-green-800">“Excellence through Hard Work and Dedication,”</span> forms the core of WEDA’s philosophy and continues to inspire the entire team in their pursuit of academic and professional excellence.
+                Driven by his motto, <span className="italic font-medium text-green-800">Excellence through Hard Work and Dedication</span>, Col Singh keeps motivating the WEDA staff to maintain the highest academic standards, discipline, and professional integrity.
               </motion.p>
             </div>
             

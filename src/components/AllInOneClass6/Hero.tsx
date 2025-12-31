@@ -40,7 +40,7 @@ const Hero = () => {
               <span className="block text-xl md:text-4xl mt-3 font-sans font-light text-gray-600">for Sainik School & RMS Class 6</span>
             </h1>
             <p className="text-sm md:text-xl text-gray-600 max-w-lg leading-relaxed">
-              Your All-in-One Solution to Crack AISSEE & RMS CET with Confidence! The Ultimate Preparation Pack aligned with NEP 2020.
+              An integrated and NEP 2020, aligned preparation solution for AISSEE and RMS CET candidates. 
             </p>
           </div>
 
