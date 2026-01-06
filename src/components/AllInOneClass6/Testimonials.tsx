@@ -1,3 +1,4 @@
+import GoogleReviewsWidget from 'google-reviews-widget';
 import { FaQuoteLeft, FaStar } from 'react-icons/fa';
 
 const testimonials = [
@@ -30,12 +31,24 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="py-16 md:py-20 bg-green-50 relative overflow-hidden">
+      <div className="container mx-auto px-6 relative z-10 max-w-7xl">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-5xl font-serif font-bold text-green-950 mb-10">
+            Trusted by Students
+          </h2>
+          <GoogleReviewsWidget instanceId="BSb93aOeewsKp9wFiUiU" />
+        </div>
+      </div>
+    </section>
+  )
+  return (
+    <section className="py-16 md:py-20 bg-green-50 relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
       <div className="absolute -bottom-32 -left-32 w-64 h-64 bg-green-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
 
       <div className="container mx-auto px-6 relative z-10 max-w-7xl">
-        
+
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
           <span className="text-green-600 font-bold tracking-wider uppercase text-xs md:text-sm mb-2 block">Success Stories</span>
@@ -48,8 +61,8 @@ const Testimonials = () => {
         {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
           {testimonials.map((item) => (
-            <div 
-              key={item.id} 
+            <div
+              key={item.id}
               className="bg-white p-5 md:p-8 rounded-2xl shadow-xl shadow-green-900/5 border border-green-100 hover:-translate-y-2 transition-transform duration-300 relative"
             >
               {/* Quote Icon */}
@@ -71,9 +84,9 @@ const Testimonials = () => {
 
               {/* User Info */}
               <div className="flex items-center gap-4 relative z-10">
-                <img 
-                  src={item.image} 
-                  alt={item.name} 
+                <img
+                  src={item.image}
+                  alt={item.name}
                   className="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover border-2 border-green-200"
                 />
                 <div>

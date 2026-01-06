@@ -25,28 +25,28 @@ const InstituteOverview = () => {
     }
   };
 
-  const features = [
-    {
-      icon: <FaUniversity />,
-      title: "Premier Institute",
-      desc: "Dedicated to Sainik School, RIMC, RMS, and NDA aspirants."
-    },
-    {
-      icon: <FaChalkboardTeacher />,
-      title: "Expert Mentoring",
-      desc: "Structured courses and result-oriented teaching methods."
-    },
-    {
-      icon: <FaUserGraduate />,
-      title: "Holistic Growth",
-      desc: "Developing leadership, confidence, and values."
-    },
-    {
-      icon: <FaMedal />,
-      title: "Proven Success",
-      desc: "Hundreds of successful selections every year."
-    }
-  ];
+  // const features = [
+  //   {
+  //     icon: <FaUniversity />,
+  //     title: "Premier Institute",
+  //     desc: "Dedicated to Sainik School, RIMC, RMS, and NDA aspirants."
+  //   },
+  //   {
+  //     icon: <FaChalkboardTeacher />,
+  //     title: "Expert Mentoring",
+  //     desc: "Structured courses and result-oriented teaching methods."
+  //   },
+  //   {
+  //     icon: <FaUserGraduate />,
+  //     title: "Holistic Growth",
+  //     desc: "Developing leadership, confidence, and values."
+  //   },
+  //   {
+  //     icon: <FaMedal />,
+  //     title: "Proven Success",
+  //     desc: "Hundreds of successful selections every year."
+  //   }
+  // ];
 
   return (
     <section className="relative bg-green-50/50 overflow-hidden py-24">
@@ -56,15 +56,15 @@ const InstituteOverview = () => {
 
       {/* Background Animated Icons */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <motion.div 
+        <motion.div
           animate={{ y: [0, -20, 0], rotate: [0, 10, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           className="absolute top-10 left-[5%] text-green-200/40 text-6xl"
         >
           <FaTrophy />
         </motion.div>
-        
-        <motion.div 
+
+        <motion.div
           animate={{ y: [0, 20, 0], rotate: [0, -10, 0] }}
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
           className="absolute top-20 right-[10%] text-green-200/40 text-5xl"
@@ -72,7 +72,7 @@ const InstituteOverview = () => {
           <FaMedal />
         </motion.div>
 
-        <motion.div 
+        <motion.div
           animate={{ scale: [1, 1.2, 1], rotate: [0, 45, 0] }}
           transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
           className="absolute bottom-20 left-[15%] text-green-200/30 text-4xl"
@@ -80,7 +80,7 @@ const InstituteOverview = () => {
           <FaStar />
         </motion.div>
 
-         <motion.div 
+        <motion.div
           animate={{ y: [0, -30, 0], rotate: [0, -20, 0] }}
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
           className="absolute bottom-40 right-[5%] text-green-200/30 text-7xl"
@@ -90,7 +90,7 @@ const InstituteOverview = () => {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           className="text-center max-w-4xl mx-auto mb-16"
           variants={containerVariants}
           initial="hidden"
@@ -100,22 +100,22 @@ const InstituteOverview = () => {
           <motion.div variants={itemVariants} className="inline-block px-4 py-1.5 bg-white border border-green-100 text-green-800 rounded-full text-sm font-semibold tracking-wide uppercase mb-4 shadow-sm">
             Our Academy
           </motion.div>
-          
+
           <motion.h2 variants={itemVariants} className="text-3xl md:text-5xl font-serif text-green-950 leading-tight mb-6">
             The Winning Edge <span className="text-green-700">Defence Academy</span>
           </motion.h2>
-          
+
           <motion.p variants={itemVariants} className="text-lg text-gray-600 leading-relaxed mb-6">
             The Winning Edge Defence Academy (WEDA) is a top coaching institute that is dedicated to the tough and comprehensive instruction of the young aspirants who will take the entrance examinations and written tests of Sainik School, RIMC, RMS, and NDA. Founded on discipline, academic excellence, and personalised mentoring, WEDA provides effectively structured programs, led by an experienced faculty, using resultoriented teaching methodologies, regular mock assessments, and a focussed, supportive learning environment.
           </motion.p>
 
           <motion.p variants={itemVariants} className="text-lg text-gray-600 leading-relaxed">
-             WEDA does not only prepare the candidates for the examinations but also stresses on the students holistically development through the acquiring of leadership qualities, confidence, good morals, and the true defence spirit. WEDA, with its record of hundreds of selections every year, has become the most trusted institution among parents and students who are in search of reliable, highquality guidance. Our goal is absolutely one to give every child the advantage that he or she needs to be able to excel in defence examinations and to be successful in life.
+            WEDA does not only prepare the candidates for the examinations but also stresses on the students holistically development through the acquiring of leadership qualities, confidence, good morals, and the true defence spirit. WEDA, with its record of hundreds of selections every year, has become the most trusted institution among parents and students who are in search of reliable, highquality guidance. Our goal is absolutely one to give every child the advantage that he or she needs to be able to excel in defence examinations and to be successful in life.
           </motion.p>
         </motion.div>
 
         {/* Feature Cards */}
-        <motion.div 
+        {/* <motion.div 
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
           variants={containerVariants}
           initial="hidden"
@@ -135,7 +135,7 @@ const InstituteOverview = () => {
               <p className="text-gray-600 text-sm leading-relaxed">{feature.desc}</p>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
