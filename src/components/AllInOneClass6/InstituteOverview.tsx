@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
-import { FaUniversity, FaUserGraduate, FaChalkboardTeacher, FaMedal, FaTrophy, FaStar } from 'react-icons/fa';
+import { FaMedal, FaTrophy, FaStar } from 'react-icons/fa';
 
 const InstituteOverview = () => {
   const containerVariants: Variants = {
