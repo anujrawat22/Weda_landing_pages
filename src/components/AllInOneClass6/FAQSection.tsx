@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaPlus, FaMinus, FaShieldAlt, FaMedal, FaStar } from 'react-icons/fa';
-import { BsBook, BsCalculator, BsGlobe, BsLightbulb, BsJournalCheck, BsCrosshair } from 'react-icons/bs';
+import { BsBook, BsCalculator, BsGlobe, BsLightbulb, BsCrosshair } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 
 const faqData = [
