@@ -22,11 +22,11 @@ const AllInOneClass6 = () => {
         <section id="about">
           <About />
         </section>
-        <section id="institute">
-          <InstituteOverview />
-        </section>
         <section id="features">
           <LearningHighlights />
+        </section>
+        <section id="institute">
+          <InstituteOverview />
         </section>
         <section id="testimonials">
           <Testimonials />
