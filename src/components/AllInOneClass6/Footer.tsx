@@ -86,8 +86,8 @@ const Footer = () => {
         <div className="border-t border-green-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
           <p>&copy; {new Date().getFullYear()} WEDA Education. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="https://wedabooks.com/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="https://wedabooks.com/terms-and-conditions" className="hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>
