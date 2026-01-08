@@ -21,18 +21,17 @@ const AllInOneClass6 = () => {
         <section id="books">
           <BookShowcase />
         </section>
-        <section id="about">
-          <About />
-        </section>
         <section id="features">
           <LearningHighlights />
+        </section>
+        <section id="about">
+          <About />
         </section>
         <section id="institute">
           <InstituteOverview />
         </section>
         <section id="products">
           <ProductView />
-
         </section>
         <section id="testimonials">
           <Testimonials />

@@ -10,70 +10,49 @@ import 'swiper/css/navigation';
 interface Book {
     id: number;
     title: string;
-    subtitle: string;
-    description: string;
-    price: string;
-    rating: number;
-    reviews: number;
     image: string;
     color: string;
-    // buttonColor removed as we are standardizing to green
     textColor: string;
     borderColor: string;
+    href: string
 }
 
 const originalBooks: Book[] = [
     {
         id: 1,
-        title: "English Mastery",
-        subtitle: "Class 6",
-        description: "Comprehensive guide for Sainik School & RMS entrance exams. Covers grammar, comprehension, and vocabulary.",
-        price: "₹499",
-        rating: 4.8,
-        reviews: 120,
-        image: "/eng.png",
+        title: "RIMC Book Set – Practice Set Papers + Previous Year Papers",
+        image: "/RIMC-paper-set.jpg",
         color: "bg-green-50",
         textColor: "text-green-700",
-        borderColor: "border-green-100"
+        borderColor: "border-green-100",
+        href: "https://wedabooks.com/product/rimc-book-set-practice-set-papers-previous-year-papers"
     },
     {
         id: 2,
-        title: "Maths Mastery",
-        subtitle: "Class 6",
-        description: "Master arithmetic, algebra, and geometry with step-by-step solutions and practice problems.",
-        price: "₹549",
-        rating: 4.9,
-        reviews: 98,
-        image: "/maths.png",
+        title: "RIMC – Previous Year Papers",
+        image: "/RIMC-previous-paper.jpg",
         color: "bg-amber-50",
         textColor: "text-amber-700",
-        borderColor: "border-amber-100"
+        borderColor: "border-amber-100",
+        href: "https://wedabooks.com/product/rimc-previous-year-papers"
     },
     {
         id: 3,
-        title: "General Intelligence",
-        subtitle: "Class 6",
-        description: "Sharpen your logical reasoning and problem-solving skills with out expert designed puzzles.",
-        price: "₹449",
-        rating: 4.7,
-        reviews: 85,
+        title: "National Defence Academy (NDA) – All-in-One Practice Sets and Previous Year Papers",
         image: "/GI.png",
         color: "bg-blue-50",
         textColor: "text-blue-700",
-        borderColor: "border-blue-100"
+        borderColor: "border-blue-100",
+        href: "https://wedabooks.com/product/national-defence-academy-nda-all-in-one-practice-sets-and-previous-year-papers"
     },
     {
         id: 4,
-        title: "General Science",
-        subtitle: "Class 6",
-        description: "Explore the world of science with clear explanations, diagrams, and exam-focused topics.",
-        price: "₹499",
-        rating: 4.8,
-        reviews: 110,
+        title: "Sainik School & RMS Class 6 – All-in-One Practice Sets and Previous Year Papers",
         image: "/gs.png",
         color: "bg-red-50",
         textColor: "text-red-700",
-        borderColor: "border-red-100"
+        borderColor: "border-red-100",
+        href: "https://wedabooks.com/product/sainik-school-rms-class-6-all-in-one-practice-sets-and-previous-year-papers"
     },
 ];
 
@@ -109,7 +88,7 @@ const ProductView: React.FC = () => {
                 </div>
 
                 {/* Product Slider */}
-                <div className="relative px-2 md:px-4">
+                <div className="relative px-2 md:px-4 overflow-hidden">
                     <Swiper
                         modules={[Autoplay, Pagination, Navigation]}
                         spaceBetween={30}
@@ -147,63 +126,31 @@ const ProductView: React.FC = () => {
                                     className={`group relative bg-white rounded-3xl overflow-hidden hover:shadow-xl transition-all duration-300 h-full flex flex-col border ${book.borderColor}`}
                                 >
                                     {/* Top Section: Soft Background + Image */}
-                                    <div className={`relative h-64 ${book.color} flex items-center justify-center p-6 overflow-hidden`}>
-
-                                        {/* Wishlist Icon */}
-                                        <div className="absolute top-4 right-4 z-20">
-                                            <button className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-gray-400 hover:text-red-500 transition-colors duration-300 shadow-sm">
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                                                </svg>
-                                            </button>
-                                        </div>
+                                    <div className={`relative h-72 ${book.color} flex items-center justify-center p-6 overflow-hidden `}>
 
                                         {/* Product Image */}
                                         <motion.img
                                             src={book.image}
                                             alt={book.title}
-                                            whileHover={{ scale: 1.05 }}
-                                            transition={{ type: "spring", stiffness: 300 }}
-                                            className="w-40 md:w-48 h-auto object-contain z-10 drop-shadow-lg mix-blend-multiply"
+                                            whileHover={{ scale: 1.1, rotate: -3 }}
+                                            transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                                            className="w-auto h-full max-h-full object-contain z-10 drop-shadow-2xl mix-blend-multiply"
                                         />
                                     </div>
 
                                     {/* Bottom Section: Content */}
                                     <div className="p-6 flex flex-col flex-grow">
 
-                                        <div className="flex justify-between items-start mb-2">
-                                            <h3 className="text-xl md:text-2xl font-bold text-gray-900 font-sans tracking-tight leading-tight group-hover:text-green-800 transition-colors">
+                                        <div className="flex justify-between items-start mb-2 h-8">
+                                            <h3 className="text-md md:text-md font-bold text-gray-900 font-sans tracking-tight leading-tight group-hover:text-green-800 transition-colors">
                                                 {book.title}
                                             </h3>
                                         </div>
 
-                                        {/* Tags/Subtitle */}
-                                        <div className="flex gap-2 mb-4">
-                                            <span className="bg-gray-100 rounded px-2 py-1 text-xs font-semibold text-gray-600 uppercase tracking-wider">
-                                                {book.subtitle}
-                                            </span>
-                                            <span className={`bg-opacity-10 rounded px-2 py-1 text-xs font-semibold uppercase tracking-wider ${book.textColor} ${book.color}`}>
-                                                Guidebook
-                                            </span>
-                                        </div>
-
-                                        {/* Description */}
-                                        <p className="text-gray-500 text-sm leading-relaxed mb-6 line-clamp-3">
-                                            {book.description}
-                                        </p>
-
                                         {/* Footer: Price and Button */}
                                         <div className="mt-auto flex items-center justify-between pt-4 border-t border-gray-50">
-                                            <div>
-                                                <p className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-0.5">Price</p>
-                                                <p className="text-2xl font-bold text-gray-900">{book.price}</p>
-                                            </div>
-
-                                            <button className={`bg-green-600 hover:bg-green-700 text-white px-5 py-2.5 rounded-lg font-medium shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex items-center gap-2 text-sm`}>
-                                                <span>Add to cart</span>
-                                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
-                                                    <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                                                </svg>
+                                            <button className={`bg-green-700 hover:bg-green-800 text-white px-5 py-2.5 rounded-lg font-medium shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2 text-sm w-90 cursor-pointer`} onClick={() => window.location.href = book.href}>
+                                                Buy Now
                                             </button>
                                         </div>
                                     </div>
@@ -220,7 +167,7 @@ const ProductView: React.FC = () => {
                     {/* Features Grid */}
                     <div className="space-y-8">
                         <div className="text-left">
-                            <h3 className="text-2xl font-serif font-bold text-gray-900 mb-2">What's Inside?</h3>
+                            <h3 className="text-2xl font-serif font-bold text-gray-900 mb-2">Unbelievable Offer!</h3>
                             <div className="h-1 w-20 bg-green-500 rounded-full"></div>
                         </div>
 
@@ -266,9 +213,6 @@ const ProductView: React.FC = () => {
                                 <div className="inline-block px-4 py-1.5 rounded-full bg-green-700/50 border border-green-600 text-green-100 text-xs font-bold uppercase tracking-wider mb-6">
                                     Limited Time Deal
                                 </div>
-                                <h3 className="text-3xl md:text-4xl font-serif font-bold mb-4">
-                                    Unbelievable Offer
-                                </h3>
                                 <p className="text-green-100 text-lg">
                                     Get more than just books with our premium bundle.
                                 </p>
@@ -288,13 +232,6 @@ const ProductView: React.FC = () => {
                                     </div>
                                 ))}
                             </div>
-
-                            <button className="w-full bg-white text-green-900 font-bold py-4 rounded-xl hover:bg-green-50 transition-colors shadow-lg flex items-center justify-center gap-2 group">
-                                Claim Offer Now
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 transform group-hover:translate-x-1 transition-transform">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                </svg>
-                            </button>
                         </div>
                     </motion.div>
 
