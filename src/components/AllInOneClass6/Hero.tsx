@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="absolute bottom-20 left-[10%] text-green-200 text-4xl opacity-40 z-0 font-light">+</div>
 
       {/* Main Container */}
-      <div className="relative max-w-7xl mx-auto py-10 flex flex-col-reverse md:flex-row items-center justify-between gap-12 z-10">
+      <div className="relative max-w-7xl mx-auto py-20 lg:py-28 flex flex-col-reverse md:flex-row items-center justify-between gap-16 lg:gap-24 z-10">
 
         {/* Left Content */}
         <div className="w-full md:w-1/2 space-y-8 pl-4 lg:pl-8">
@@ -40,7 +40,7 @@ const Hero = () => {
               <span className="block text-xl md:text-4xl mt-3 font-sans font-light text-gray-600">for Sainik School & RMS Class 6</span>
             </h1>
             <p className="text-sm md:text-xl text-gray-600 max-w-lg leading-relaxed">
-              An integrated and NEP 2020, aligned preparation solution for AISSEE and RMS CET candidates. 
+              An integrated and NEP 2020, aligned preparation solution for AISSEE and RMS CET candidates.
             </p>
           </div>
 
@@ -118,7 +118,7 @@ const Hero = () => {
           />
 
           {/* Image Container */}
-          <div className="relative z-10 w-full max-w-md aspect-[4/5] md:aspect-square flex items-center justify-center">
+          <div className="relative z-10 w-full max-w-lg md:max-w-xl aspect-[4/5] md:aspect-square flex items-center justify-center">
             {/* Main Book Image */}
             <div className="relative w-full h-full transform transition-transform duration-500 hover:scale-105">
               <img

@@ -45,21 +45,21 @@ const FAQSection = () => {
         <div className="absolute bottom-[-10%] right-[-5%] w-96 h-96 bg-green-50 rounded-full blur-3xl opacity-50"></div>
 
         {/* Animated Floating Icons */}
-        <motion.div
+        {/* <motion.div
           animate={{ y: [0, -20, 0], rotate: [0, 10, 0] }}
           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
           className="absolute top-20 left-[10%] text-green-200/40 text-6xl"
         >
           <FaShieldAlt />
-        </motion.div>
+        </motion.div> */}
 
-        <motion.div
+        {/* <motion.div
           animate={{ y: [0, 30, 0], rotate: [0, -15, 0] }}
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
           className="absolute bottom-40 left-[5%] text-green-200/30 text-8xl"
         >
           <BsCrosshair />
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           animate={{ y: [0, -25, 0], scale: [1, 1.1, 1] }}

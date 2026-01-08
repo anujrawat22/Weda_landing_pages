@@ -7,6 +7,8 @@ import FAQSection from "../components/AllInOneClass6/FAQSection";
 import Testimonials from "../components/AllInOneClass6/Testimonials";
 import Footer from "../components/AllInOneClass6/Footer";
 import LearningHighlights from "../components/AllInOneClass6/LearningHighlights";
+import ProductView from "../components/AllInOneClass6/ProductView";
+
 
 const AllInOneClass6 = () => {
   return (
@@ -27,6 +29,10 @@ const AllInOneClass6 = () => {
         </section>
         <section id="institute">
           <InstituteOverview />
+        </section>
+        <section id="products">
+          <ProductView />
+
         </section>
         <section id="testimonials">
           <Testimonials />
