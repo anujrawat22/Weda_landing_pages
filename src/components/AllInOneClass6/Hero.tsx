@@ -124,7 +124,7 @@ const Hero = () => {
               <img
                 src="/HeroImage.png"
                 alt="WEDA All in One Book Set"
-                className="w-full h-full object-contain drop-shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500"
+                className="w-full h-full object-contain drop-shadow-2xl transform rotate-3 scale-125 hover:rotate-0 transition-all duration-500"
               />
             </div>
 

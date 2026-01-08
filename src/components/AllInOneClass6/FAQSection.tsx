@@ -83,14 +83,14 @@ const FAQSection = () => {
           {/* Left Visual Side */}
           <div className="w-full lg:w-1/2 relative flex justify-center lg:sticky lg:top-24">
             <div className="relative w-full max-w-[200px] md:max-w-none md:w-2/3 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-white">
+              {/* Overlay Pattern (Dots) */}
+              <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#14532d_1px,transparent_1px)] [background-size:20px_20px] opacity-20"></div>
+
               <img
                 src="/eng.png"
                 alt="Student studying with WEDA books"
-                className="w-full h-auto object-contain"
+                className="w-full h-auto object-contain relative z-10"
               />
-
-              {/* Overlay Pattern (Dots) */}
-              <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#14532d_1px,transparent_1px)] [background-size:20px_20px] opacity-20"></div>
             </div>
 
             {/* Decorative Elements behind image */}
