@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { FaPlus, FaMinus, FaShieldAlt, FaMedal, FaStar } from 'react-icons/fa';
-import { BsBook, BsCalculator, BsGlobe, BsLightbulb, BsCrosshair } from 'react-icons/bs';
+import { FaPlus, FaMinus, FaMedal, FaStar, FaBook, FaCalculator, FaGlobe, FaLightbulb } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 const faqData = [
@@ -8,25 +7,25 @@ const faqData = [
     id: 1,
     question: "How much is the delivery time?",
     answer: "The books are sent by IndiaPost. Usual time of delivery is 10 - 12 days. The team will share the despatch details with you.",
-    icon: <BsBook className="w-6 h-6" />
+    icon: <FaBook className="w-6 h-6" />
   },
   {
     id: 2,
     question: "How will the updates be delivered?",
     answer: "The updates will be delivered via email. The despatch team will record your email address.",
-    icon: <BsCalculator className="w-6 h-6" />
+    icon: <FaCalculator className="w-6 h-6" />
   },
   {
     id: 3,
     question: "What about the discount on Online & Offline batches?",
     answer: "The online and offline team will ask your preference over phonecall. Please share the receipt of the book to avail the offer.",
-    icon: <BsGlobe className="w-6 h-6" />
+    icon: <FaGlobe className="w-6 h-6" />
   },
   {
     id: 4,
     question: "How do i get the discount coupons for digital courses?",
     answer: "The team will share the coupons on your email. The coupons can be used when you buy selected digital courses from The Winning Edge Mobile App.",
-    icon: <BsLightbulb className="w-6 h-6" />
+    icon: <FaLightbulb className="w-6 h-6" />
   }
 ];
 
@@ -46,20 +45,20 @@ const FAQSection = () => {
 
         {/* Animated Floating Icons */}
         {/* <motion.div
-          animate={{ y: [0, -20, 0], rotate: [0, 10, 0] }}
-          transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-20 left-[10%] text-green-200/40 text-6xl"
-        >
-          <FaShieldAlt />
-        </motion.div> */}
+           animate={{ y: [0, -20, 0], rotate: [0, 10, 0] }}
+           transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+           className="absolute top-20 left-[10%] text-green-200/40 text-6xl"
+         >
+           <FaShieldAlt />
+         </motion.div> */}
 
         {/* <motion.div
-          animate={{ y: [0, 30, 0], rotate: [0, -15, 0] }}
-          transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-          className="absolute bottom-40 left-[5%] text-green-200/30 text-8xl"
-        >
-          <BsCrosshair />
-        </motion.div> */}
+           animate={{ y: [0, 30, 0], rotate: [0, -15, 0] }}
+           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+           className="absolute bottom-40 left-[5%] text-green-200/30 text-8xl"
+         >
+           <FaCrosshairs />
+         </motion.div> */}
 
         <motion.div
           animate={{ y: [0, -25, 0], scale: [1, 1.1, 1] }}
