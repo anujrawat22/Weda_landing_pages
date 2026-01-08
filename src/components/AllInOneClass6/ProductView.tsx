@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { FaLayerGroup, FaQuestionCircle, FaFileAlt, FaFont, FaPrint, FaGift, FaPercentage, FaSync, FaTags } from 'react-icons/fa';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -211,7 +212,93 @@ const ProductView: React.FC = () => {
                         ))}
                     </Swiper>
                 </div>
+            </div>
 
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-24">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+
+                    {/* Features Grid */}
+                    <div className="space-y-8">
+                        <div className="text-left">
+                            <h3 className="text-2xl font-serif font-bold text-gray-900 mb-2">What's Inside?</h3>
+                            <div className="h-1 w-20 bg-green-500 rounded-full"></div>
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            {[
+                                { icon: FaLayerGroup, title: "1250+ Pages", desc: "Comprehensive coverage" },
+                                { icon: FaQuestionCircle, title: "5000+ Questions", desc: "Extensive practice bank" },
+                                { icon: FaFileAlt, title: "Mini Sets", desc: "Topic-wise practice" },
+                                { icon: FaTags, title: "Mock Papers", desc: "& Previous Years’ Papers" },
+                                { icon: FaFont, title: "Large Font", desc: "Widely spaced for readability" },
+                                { icon: FaPrint, title: "High Quality", desc: "Premium paper & dark print" },
+                            ].map((feature, idx) => (
+                                <motion.div
+                                    key={idx}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: idx * 0.1 }}
+                                    className="flex items-start gap-4 p-4 rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-shadow"
+                                >
+                                    <div className="p-3 rounded-xl bg-green-50 text-green-600">
+                                        <feature.icon className="w-5 h-5" />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-900">{feature.title}</h4>
+                                        <p className="text-sm text-gray-500">{feature.desc}</p>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Offer Section */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-green-900 to-green-800 text-white p-8 md:p-12 shadow-2xl"
+                    >
+                        {/* Background décor */}
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
+
+                        <div className="relative z-10 flex flex-col h-full justify-between space-y-8">
+                            <div>
+                                <div className="inline-block px-4 py-1.5 rounded-full bg-green-700/50 border border-green-600 text-green-100 text-xs font-bold uppercase tracking-wider mb-6">
+                                    Limited Time Deal
+                                </div>
+                                <h3 className="text-3xl md:text-4xl font-serif font-bold mb-4">
+                                    Unbelievable Offer
+                                </h3>
+                                <p className="text-green-100 text-lg">
+                                    Get more than just books with our premium bundle.
+                                </p>
+                            </div>
+
+                            <div className="space-y-6">
+                                {[
+                                    { icon: FaPercentage, text: "Cost Adjustable (50% Online, 100% Offline)" },
+                                    { icon: FaGift, text: "Discount Coupons for Digital Courses" },
+                                    { icon: FaSync, text: "Free Digital Updates and Upgrades" },
+                                ].map((item, i) => (
+                                    <div key={i} className="flex items-center gap-4">
+                                        <div className="flex-shrink-0 w-10 h-10 rounded-full bg-white/10 flex items-center justify-center backdrop-blur-sm">
+                                            <item.icon className="w-4 h-4 text-green-300" />
+                                        </div>
+                                        <span className="font-medium text-lg">{item.text}</span>
+                                    </div>
+                                ))}
+                            </div>
+
+                            <button className="w-full bg-white text-green-900 font-bold py-4 rounded-xl hover:bg-green-50 transition-colors shadow-lg flex items-center justify-center gap-2 group">
+                                Claim Offer Now
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5 transform group-hover:translate-x-1 transition-transform">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg>
+                            </button>
+                        </div>
+                    </motion.div>
+
+                </div>
             </div>
         </section>
     );
