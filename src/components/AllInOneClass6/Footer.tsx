@@ -72,7 +72,7 @@ const Footer = () => {
                   href="tel:+919876543210"
                   className="hover:text-green-400 transition"
                 >
-                  +91 98765 43210
+                  +91 7417656633
                 </a>
               </li>
 
@@ -83,7 +83,7 @@ const Footer = () => {
                   href="mailto:support@weda.in"
                   className="hover:text-green-400 transition"
                 >
-                  support@weda.in
+                  info@wedabooks.com
                 </a>
               </li>
             </ul>
