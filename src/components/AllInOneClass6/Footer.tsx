@@ -2,6 +2,15 @@ import { FaFacebookF, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from
 import Logo from '../../assets/Weda_logo_cropped.png'; // Adjust path if needed
 
 const Footer = () => {
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <footer className="bg-green-950 text-white pt-12 md:pt-20 pb-8 md:pb-10">
       <div className="container mx-auto px-6 max-w-7xl">
@@ -30,11 +39,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg md:text-xl font-serif font-bold mb-4 md:mb-6">Quick Links</h3>
             <ul className="space-y-4">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm md:text-base">Home</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm md:text-base">About Us</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm md:text-base">Our Books</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm md:text-base">Success Stories</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors text-sm md:text-base">Contact</a></li>
+              <li onClick={() => scrollToSection('home')}><span className="text-gray-400 hover:text-white transition-colors text-sm md:text-base cursor-pointer">Home</span></li>
+              <li onClick={() => scrollToSection('books')}><span className="text-gray-400 hover:text-white transition-colors text-sm md:text-base cursor-pointer">Books</span></li>
+              <li onClick={() => scrollToSection('features')}><span className="text-gray-400 hover:text-white transition-colors text-sm md:text-base cursor-pointer">Features</span></li>
+              <li onClick={() => scrollToSection('testimonials')}><span className="text-gray-400 hover:text-white transition-colors text-sm md:text-base cursor-pointer">Testimonials</span></li>
+              <li onClick={() => scrollToSection('faq')}><span className="text-gray-400 hover:text-white transition-colors text-sm md:text-base cursor-pointer">FAQs</span></li>
+              <li onClick={() => scrollToSection('contact')}><span className="text-gray-400 hover:text-white transition-colors text-sm md:text-base cursor-pointer">Contact</span></li>
             </ul>
           </div>
 
@@ -46,12 +56,12 @@ const Footer = () => {
               <li className="flex items-start gap-3 text-gray-400 text-sm md:text-base">
                 <FaMapMarkerAlt className="mt-1 text-green-500 shrink-0" />
                 <a
-                  href="https://www.google.com/maps/search/?api=1&query=123+Defence+Colony+New+Delhi+India+110024"
+                  href="https://www.google.com/maps/place/C%2F29,+Shivlok,+Shivlok+Colony,+Dehradun,+Uttarakhand+248008/@30.3185303,78.0745268,21z/data=!4m6!3m5!1s0x3909284f3b224693:0xc6eb2ac2c2d6cc3f!8m2!3d30.3185357!4d78.0745466!16s%2Fg%2F11lmpqy5k_?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-green-400 transition"
                 >
-                  123 Defence Colony, New Delhi, India - 110024
+                  C-29 Shivlok Colony Ladpur, Raipur, Dehradun, Uttarakhand, 248001
                 </a>
               </li>
 

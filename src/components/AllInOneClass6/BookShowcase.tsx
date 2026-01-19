@@ -9,7 +9,7 @@ import 'swiper/css/effect-fade';
 const books = [
   {
     id: 1,
-    title: "WEDA ENGLISH BOOK",
+    title: "English BOOK",
     subtitle: "WEDA Class 6 English Mastery – Sainik & RMS Guidebook",
     description: "WEDA Class 6 English Guidebook for Sainik & RMS aspirants offers NEP-aligned concepts, grammar and comprehension practice, critical thinking tasks, previous year papers and mock tests. Designed by defence mentors, it builds strong language skills and exam confidence for AISSEE and RMS CET success.",
     image: "/eng.png",
@@ -18,7 +18,7 @@ const books = [
   },
   {
     id: 2,
-    title: "WEDA Maths BOOK",
+    title: "Maths BOOK",
     subtitle: "Master Numbers with Confidence: WEDA Class 6 Maths Mastery – Sainik & RMS Guidebook",
     description: "WEDA Class 6 Mathematics Guidebook builds strong foundations for AISSEE & RMS with NEP-aligned theory, step-by-step solutions, visuals, graded exercises, previous year questions and full-length mocks, covering Numbers, Geometry, Algebra, Mensuration, Data Handling and Logical Maths for faster problem-solving and higher scores.",
     image: "/maths.png",
@@ -27,7 +27,7 @@ const books = [
   },
   {
     id: 3,
-    title: "WEDA INTELLIGENCE BOOK",
+    title: "Intelligence BOOK",
     subtitle: "WEDA Class 6 General Intelligence Mastery – Sainik & RMS Guidebook",
     description: "WEDA Class 6 General Intelligence Guidebook sharpens logical, verbal and non-verbal reasoning for AISSEE & RMS with NEP-aligned concepts, puzzles, visual-spatial exercises, step-by-step methods, topic-wise practice, previous year questions and full-length mock tests—building analytical thinking and exam confidence.",
     image: "/GI.png",
@@ -36,7 +36,7 @@ const books = [
   },
   {
     id: 4,
-    title: "WEDA General Science Book",
+    title: "General Science Book",
     subtitle: "Master Science Concepts with Clarity: WEDA Class 6 Science Mastery – Sainik & RMS Guidebook",
     description: "WEDA’s Class 6 General Science Guidebook simplifies Physics, Chemistry, Biology and Everyday Science for AISSEE & RMS aspirants with NEP-aligned theory, real-life examples, diagrams, MCQs, assertion-reason questions, previous papers and mock tests—building strong concepts and exam readiness.",
     image: "/gs.png",
