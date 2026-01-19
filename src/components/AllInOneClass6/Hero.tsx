@@ -56,8 +56,8 @@ const Hero = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 pt-2 items-center">
-            <button className="w-fit px-6 md:px-8 py-3 md:py-4 bg-green-900 hover:bg-green-800 text-white text-base md:text-lg font-medium rounded-full shadow-xl shadow-green-900/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105" onClick={handleButtonClick}>
+          <div className="flex flex-col sm:flex-row gap-4 pt-2 items-center pr-5">
+            <button className="w-full md:w-fit px-6 md:px-8 py-3 md:py-4 bg-green-900 hover:bg-green-800 text-white text-base md:text-lg font-medium rounded-full shadow-xl shadow-green-900/20 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105" onClick={handleButtonClick}>
               Get Complete Set Now
             </button>
           </div>

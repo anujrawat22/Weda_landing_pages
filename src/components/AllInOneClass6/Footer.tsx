@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaYoutube, FaWhatsapp, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 import Logo from '../../assets/Weda_logo_cropped.png'; // Adjust path if needed
 
 const Footer = () => {
@@ -26,11 +26,17 @@ const Footer = () => {
               Empowering future leaders with the best preparation material for Sainik School & RMS entrance exams. Discipline, Dedication, and Success.
             </p>
             <div className="flex gap-4 pt-2">
-              <a href="https://www.facebook.com/profile.php?id=61581056314766" className="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700 transition-colors">
+              <a href="https://www.facebook.com/profile.php?id=61581056314766" target="_blank" className="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700 transition-colors">
                 <FaFacebookF />
               </a>
-              <a href="https://www.instagram.com/weda_books_/" className="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700 transition-colors">
+              <a href="https://www.instagram.com/weda_books_/" target="_blank" className="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700 transition-colors">
                 <FaInstagram />
+              </a>
+              <a href="https://www.youtube.com/@TheWinningEdgeDefence" target="_blank" className="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700 transition-colors">
+                <FaYoutube />
+              </a>
+              <a href="https://wa.me/917417656633" target="_blank" className="w-10 h-10 rounded-full bg-green-900 flex items-center justify-center hover:bg-green-700 transition-colors">
+                <FaWhatsapp />
               </a>
             </div>
           </div>
