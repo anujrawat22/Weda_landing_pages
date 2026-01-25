@@ -7,14 +7,15 @@ const PreBook = () => {
       id: 1,
       title: "RIMC Combo Pack",
       description: "Boost your RIMC entrance exam preparation with the WEDA RIMC Combo Pack, combining full-length practice papers and authentic previous year papers in one powerful set. Expertly designed by defence professionals, it closely matches real exam patterns, difficulty, and timing. Covering Mathematics, English, General Science, and General Knowledge, it includes detailed solutions, smart strategies, and time-management tips. Ideal for beginners and advanced aspirants, this combo helps build accuracy, confidence, and true exam readiness for RIMC success",
-      image: "/SSRMS9.png",
+      
+       image: "/WEDA.png",
       highlights: ["Full-length Practice Papers", "Authentic Previous Year Papers", "Detailed Solutions & Strategies"]
     },
     {
       id: 2,
       title: "WEDA Complete Book Set for Class 9",
       description: "Prepare smarter and stay ahead with the WEDA Complete Book Set for Class 9 — a comprehensive bundle of five expertly designed guidebooks covering Social Science, English, General Science, Mathematics, and Intelligence, specially curated for Sainik School (Class 9 Entry) and Rashtriya Military School (RMS CET) examinations. Developed by The Winning Edge Defence Academy (WEDA) under the guidance of ex-defence officers, experienced faculty, and NEP-aligned subject experts, this set delivers a structured, exam-focused, and concept-driven approach to help aspirants crack highly competitive defence school entrances with confidence.",
-      image: "/WEDA.png",
+     image: "/SSRMS9.png",
       highlights: ["Structured & Exam-Focused", "Concept-Driven Approach", "NEP-Aligned Content"]
     }
   ];
