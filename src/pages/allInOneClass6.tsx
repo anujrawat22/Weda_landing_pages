@@ -8,6 +8,7 @@ import Testimonials from "../components/AllInOneClass6/Testimonials";
 import Footer from "../components/AllInOneClass6/Footer";
 import LearningHighlights from "../components/AllInOneClass6/LearningHighlights";
 import ProductView from "../components/AllInOneClass6/ProductView";
+import PreBook from "../components/AllInOneClass6/PreBook";
 
 
 const AllInOneClass6 = () => {
@@ -32,6 +33,9 @@ const AllInOneClass6 = () => {
         </section>
         <section id="products">
           <ProductView />
+        </section>
+        <section id="prebook">
+          <PreBook />
         </section>
         <section id="testimonials">
           <Testimonials />

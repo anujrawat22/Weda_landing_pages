@@ -36,15 +36,15 @@ const originalBooks: Book[] = [
         borderColor: "border-amber-100",
         href: "https://wedabooks.com/product/rimc-previous-year-papers"
     },
-    {
-        id: 3,
-        title: "National Defence Academy (NDA) – All-in-One Practice Sets and Previous Year Papers",
-        image: "/GI.png",
-        color: "bg-blue-50",
-        textColor: "text-blue-700",
-        borderColor: "border-blue-100",
-        href: "https://wedabooks.com/product/national-defence-academy-nda-all-in-one-practice-sets-and-previous-year-papers"
-    },
+    // {
+    //     id: 3,
+    //     title: "National Defence Academy (NDA) – All-in-One Practice Sets and Previous Year Papers",
+    //     image: "/GI.png",
+    //     color: "bg-blue-50",
+    //     textColor: "text-blue-700",
+    //     borderColor: "border-blue-100",
+    //     href: "https://wedabooks.com/product/national-defence-academy-nda-all-in-one-practice-sets-and-previous-year-papers"
+    // },
     {
         id: 4,
         title: "Sainik School & RMS Class 6 – All-in-One Practice Sets and Previous Year Papers",
