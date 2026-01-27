@@ -65,7 +65,7 @@ const PreBook = () => {
         </div>
 
         {books.map((book, index) => (
-          <div key={book.id} className={`flex flex-col lg:flex-row items-center gap-12 lg:gap-20 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
+          <div key={book.id} className={`flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20 ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''}`}>
             
             {/* Content Side */}
             <motion.div 
